@@ -2,7 +2,6 @@
 
 A fully configured helpdesk ticketing system deployed from scratch on a Fedora Server VM in my homelab. Integrated with Active Directory via LDAP so domain users can authenticate with their existing credentials. Built as a portfolio piece to demonstrate real 1st line helpdesk skills beyond just terminal work.
 
----
 
 ## Environment
 
@@ -18,7 +17,7 @@ A fully configured helpdesk ticketing system deployed from scratch on a Fedora S
 | Domain Controller | Windows Server 2022 (DC01) |
 | Domain | lab.local |
 
----
+
 
 ## What This Project Covers
 
@@ -40,7 +39,7 @@ A fully configured helpdesk ticketing system deployed from scratch on a Fedora S
 - Diagnosed and fixed SELinux blocking PHP-FPM from making outbound LDAP connections
 - Connected osTicket to DC01 so AD users authenticate with domain credentials
 
----
+
 
 ## Departments
 
@@ -50,7 +49,7 @@ A fully configured helpdesk ticketing system deployed from scratch on a Fedora S
 | HR | Onboarding, offboarding, HR requests |
 | Facilities | Hardware, printers, building access |
 
----
+
 
 ## SLA Plans
 
@@ -61,7 +60,8 @@ A fully configured helpdesk ticketing system deployed from scratch on a Fedora S
 | P3 Medium | 8 hours | Non-urgent requests |
 | P4 Low | 24 hours | General enquiries |
 
----
+
+
 
 ## Help Topics
 
@@ -73,7 +73,8 @@ A fully configured helpdesk ticketing system deployed from scratch on a Fedora S
 | New Starter | HR | Normal | P3 Medium |
 | General Enquiry | IT Support | Low | P4 Low |
 
----
+
+
 
 ## Canned Responses
 
@@ -86,7 +87,8 @@ A fully configured helpdesk ticketing system deployed from scratch on a Fedora S
 | General Enquiry - Response | IT Support |
 | Ticket Resolved - Closing | IT Support |
 
----
+
+
 
 ## LDAP Integration
 
