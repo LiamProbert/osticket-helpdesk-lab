@@ -8,7 +8,7 @@ A helpdesk ticketing system was the obvious choice. The specific tool does not m
 
 I went with osTicket over GLPI. GLPI is a heavier asset management suite where ticketing feels like an afterthought. osTicket is simpler, more focused on pure helpdesk ticketing, and closer to what I would actually be using day to day in a 1st line role.
 
----
+
 
 ## Project Scope
 
@@ -18,7 +18,7 @@ Phase 1 is the infrastructure and configuration. Spin up a VM, install the LAMP 
 
 Phase 2 is the ticket resolution library. Once the system is live, I create and resolve realistic helpdesk tickets based on real scenarios. Each ticket gets logged, categorised, assigned, resolved, and closed. This builds a history showing I understand the full workflow from start to finish.
 
----
+
 
 ## VM Setup
 
@@ -42,7 +42,7 @@ Rather than using the virt-manager console, I just SSH in from my ThinkPad. Copy
 ssh lliiiamm@192.168.122.80
 ```
 
----
+
 
 ## System Update
 
@@ -54,7 +54,7 @@ sudo dnf update -y
 
 This pulled in 334 package upgrades including a new kernel. Wanted everything up to date before building on top of it.
 
----
+
 
 ## LAMP Stack Installation
 
@@ -81,7 +81,7 @@ sudo systemctl enable --now httpd mariadb
 
 Both came up fine. Apache listening on port 80, MariaDB reporting "Taking your SQL requests now..."
 
----
+
 
 ## MariaDB Configuration
 
@@ -111,7 +111,7 @@ FLUSH PRIVILEGES;
 EXIT;
 ```
 
----
+
 
 ## osTicket Deployment
 
@@ -166,7 +166,7 @@ sudo firewall-cmd --permanent --add-service=http
 sudo firewall-cmd --reload
 ```
 
----
+
 
 ## Web Installer
 
@@ -192,7 +192,7 @@ Locked down the config file permissions:
 sudo chmod 0644 /var/www/html/osticket/upload/include/ost-config.php
 ```
 
----
+
 
 ## Accessing osTicket
 
@@ -210,7 +210,7 @@ http://192.168.122.80/osticket/upload/
 
 Logged in with the admin credentials and the dashboard showed the default "osTicket Installed!" ticket. Everything working.
 
----
+
 
 ## Phase 1 Configuration
 
@@ -272,7 +272,7 @@ I created six covering the most common interactions:
 
 Each one uses placeholders in square brackets like `[name]` and `[password]` which the agent fills in when applying the response to a ticket.
 
----
+
 
 ## LDAP Integration
 
