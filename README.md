@@ -88,7 +88,7 @@ Three tickets were created and resolved during Phase 2, each worked through the 
 
 The progression matters more than the individual tickets. The first two had mistakes (wrong department routing, missed internal note, password in a ticket thread). By the third ticket I had the full workflow down properly.
 
-Full documentation of each ticket, including the mistakes and what I learned: [osticket-config.md](osticket-config.md)
+Full documentation of each ticket, including the mistakes and what I learned: [osticket-live-practice.md](osticket-live-practice.md)
 
 ## LDAP Integration
 
