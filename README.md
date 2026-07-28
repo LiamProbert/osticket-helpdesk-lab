@@ -1,6 +1,6 @@
 # osTicket Helpdesk Lab
  
-A fully configured helpdesk ticketing system deployed from scratch on a Fedora Server VM in my homelab. Integrated with Active Directory via LDAP so domain users can authenticate with their existing credentials. Built as a portfolio piece to demonstrate real 1st line helpdesk skills beyond just terminal work.
+A fully configured helpdesk ticketing system deployed from scratch on a Fedora Server VM in my homelab. Integrated with Active Directory via LDAP so domain users can authenticate with their existing credentials. Built to demonstrate real 1st line helpdesk skills beyond just terminal work.
  
 ## Environment
  
